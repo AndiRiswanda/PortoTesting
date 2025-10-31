@@ -34,8 +34,8 @@ function Home() {
                 I build things for the web and beyond. Comfortable with Python, React, and C++, I enjoy turning ideas into fast, usable products.
               </p>
               <div className="mt-6 flex flex-wrap md:flex-nowrap justify-center md:justify-start gap-3">
-                <Link to={`${import.meta.env.BASE_URL}about`} className="px-5 py-2 rounded-md bg-brand text-white hover:opacity-90">About me</Link>
-                <Link to={`${import.meta.env.BASE_URL}blog`} className="px-5 py-2 rounded-md bg-white/10 text-gray-200 border border-white/20 hover:bg-white/20">Read blog</Link>
+                <Link to="/about" className="px-5 py-2 rounded-md bg-brand text-white hover:opacity-90">About me</Link>
+                <Link to="/blog" className="px-5 py-2 rounded-md bg-white/10 text-gray-200 border border-white/20 hover:bg-white/20">Read blog</Link>
               </div>
 
               {/* Skills */}
@@ -53,11 +53,11 @@ function Home() {
       <section className="max-w-5xl mx-auto px-4 md:px-6 pb-16">
         <div className="flex items-end justify-between">
           <h2 className="text-2xl md:text-3xl font-semibold text-white">Latest posts</h2>
-          <Link to={`${import.meta.env.BASE_URL}blog`} className="text-brand hover:text-white text-sm">View all</Link>
+          <Link to="/blog" className="text-brand hover:text-white text-sm">View all</Link>
         </div>
         <div className="mt-6 grid gap-6 sm:grid-cols-2">
           {latest.map(p => (
-            <PostCard key={p.id} title={p.title} content={p.content} to={`${import.meta.env.BASE_URL}blog/${p.id}`} />
+            <PostCard key={p.id} title={p.title} content={p.content} to={`/blog/${p.id}`} />
           ))}
         </div>
       </section>
