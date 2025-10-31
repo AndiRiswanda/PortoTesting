@@ -1,0 +1,14 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+  font-family: Rubik, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+/* Minimal global background to let Tailwind handle layout */
+html, body, #root {
+  min-height: 100%;
+  background-color: #0f0f1a; /* deep navy */
+}
+
+/* Optional: subtle page container spacing handled by components */
