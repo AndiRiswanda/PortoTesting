@@ -8,7 +8,7 @@ import Post from './pages/Post'
 
 function App() {
  return (
-  <BrowserRouter>
+  <BrowserRouter basename={import.meta.env.BASE_URL}>
     <NavBar />
     <ScrollToTop />
     <Routes>
